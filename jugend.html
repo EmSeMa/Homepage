@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.openstreetmap.org; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Jugend – Sportfreunde Lauffen</title>
+  <meta name="description" content="Jugendabteilung der Sportfreunde Lauffen – von Bambini bis A-Jugend." />
+  <link rel="icon" type="image/jpeg" href="assets/SFLweiss.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html" class="brand"><span class="brand__logo"><img src="assets/SFLweiss.jpeg" alt="SFL Wappen"></span><span class="brand__name">Sportfreunde Lauffen<small>Tradition seit 1920</small></span></a>
+        <ul class="nav__menu">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="verein.html">Verein</a></li>
+          <li><a href="mannschaften.html">Aktive</a></li>
+          <li><a href="jugend.html">Jugend</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="sponsoren.html">Sponsoren</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="nav__cta"><a href="kontakt.html" class="btn btn--primary">Mitglied werden</a></div>
+        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs"><a href="index.html">Start</a> <span>/</span> <span>Jugend</span></nav>
+      <span class="eyebrow" style="color: var(--accent)">Jugendabteilung</span>
+      <h1>Unsere Jugend</h1>
+      <p>Vom ersten Ballkontakt bis zur A-Jugend – wir begleiten unsere jungen Talente mit Herz und Sachverstand auf ihrem fußballerischen Weg.</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--2" style="gap: 56px; align-items: center;">
+        <div class="reveal">
+          <span class="eyebrow">Unsere Philosophie</span>
+          <h2 class="section__title">Spaß steht an erster Stelle</h2>
+          <p>Bei uns lernen Kinder und Jugendliche Fußball mit Spaß und Methode. Qualifizierte Trainer:innen vermitteln spielerisch technische und taktische Grundlagen – immer mit dem Blick auf die individuelle Entwicklung jedes einzelnen Spielers.</p>
+          <p>Genauso wichtig wie sportliche Erfolge sind uns Werte wie Teamgeist, Respekt und Fairness. Denn wir sind überzeugt: Wer hier gut Fußball spielen lernt, lernt gleichzeitig fürs Leben.</p>
+          <a href="kontakt.html" class="btn btn--primary mt-4">Probetraining vereinbaren</a>
+        </div>
+
+        <div class="reveal">
+          <div class="kpi-row" style="grid-template-columns: repeat(2, 1fr); gap: 14px;">
+            <div style="padding: 24px;"><b style="font-size: 2.4rem;">11</b><span>Jugendmannschaften</span></div>
+            <div style="padding: 24px;"><b style="font-size: 2.4rem;">180+</b><span>Junge Spieler:innen</span></div>
+            <div style="padding: 24px;"><b style="font-size: 2.4rem;">29</b><span>Trainer:innen</span></div>
+            <div style="padding: 24px;"><b style="font-size: 2.4rem;">U6 – U19</b><span>Altersklassen</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mannschaften Übersicht -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Altersklassen</span>
+          <h2 class="section__title">Für jedes Alter das richtige Team</h2>
+        </div>
+      </div>
+
+      <div class="grid grid--3 teams-grid">
+        <div class="card reveal">
+          <div class="card__media card__media--alt-4">
+            Bambini
+            <img src="assets/Bambini.JPG" alt="Bambini Mannschaftsfoto" loading="lazy" onerror="this.remove()">
+            <span class="card__tag card__tag--accent">U6 – U7</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Bambini</h3>
+            <p class="card__excerpt">Erste Ballerfahrungen mit viel Spiel und Spaß.</p>
+            <div class="team-meta">
+              <div class="team-meta-row"><span class="team-meta-row__label">Training</span><span class="team-meta-row__value">Freitag, 17:00 Uhr</span></div>
+              <div class="team-meta-row"><span class="team-meta-row__label">Trainerin</span><span class="team-meta-row__value">Andreas Ibing</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__media card__media--alt-3">
+            F-Jugend
+            <img src="assets/F-Jugend.jpeg" alt="F-Jugend Mannschaftsfoto" loading="lazy" onerror="this.remove()">
+            <span class="card__tag card__tag--accent">U8 – U9</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">F-Jugend</h3>
+            <p class="card__excerpt">Spielerisches Erlernen der Grundlagen.</p>
+            <div class="team-meta">
+              <div class="team-meta-row"><span class="team-meta-row__label">Training</span><span class="team-meta-row__value">Mittwoch 17:00 Uhr Freitag 17:00 Uhr</span></div>
+              <div class="team-meta-row"><span class="team-meta-row__label">Trainer</span><span class="team-meta-row__value">Michael Fieß</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__media card__media--alt-2">
+            E-Jugend
+            <img src="assets/EJugend.jpeg" alt="E-Jugend Mannschaftsfoto" loading="lazy" onerror="this.remove()">
+            <span class="card__tag card__tag--dark">U10 – U11</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">E-Jugend</h3>
+            <p class="card__excerpt">Erste Spielformen und Turniere.</p>
+            <div class="team-meta">
+              <div class="team-meta-row"><span class="team-meta-row__label">Training</span><span class="team-meta-row__value">Mittwoch 17:00 Uhr Freitag 17:00 Uhr</span></div>
+              <div class="team-meta-row"><span class="team-meta-row__label">Trainer</span><span class="team-meta-row__value">Fabian Frank</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__media card__media--alt-1">
+            D-Jugend
+            <img src="assets/D-Jugend.jpg" alt="D-Jugend Mannschaftsfoto" loading="lazy" onerror="this.remove()">
+            <span class="card__tag">U12 – U13</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">D-Jugend</h3>
+            <p class="card__excerpt">Übergang zum Großfeld. Erste internationale Erfahrungen in La Ferté-Bernard.</p>
+            <div class="team-meta">
+              <div class="team-meta-row"><span class="team-meta-row__label">Training</span><span class="team-meta-row__value">Dienstag 17:00 Uhr Donnerstag 17:00 Uhr</span></div>
+              <div class="team-meta-row"><span class="team-meta-row__label">Trainer</span><span class="team-meta-row__value">Michael Staudinger</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__media">
+            C-Jugend
+            <img src="assets/C-Jugend.jpg" alt="C-Jugend Mannschaftsfoto" loading="lazy" onerror="this.remove()">
+            <span class="card__tag">U14 – U15</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">C-Jugend</h3>
+            <p class="card__excerpt">Taktische Vertiefung und Wettkampfspiele.</p>
+            <div class="team-meta">
+              <div class="team-meta-row"><span class="team-meta-row__label">Training</span><span class="team-meta-row__value">Montag 18:00 Uhr Donnerstag 17:00 Uhr</span></div>
+              <div class="team-meta-row"><span class="team-meta-row__label">Trainer</span><span class="team-meta-row__value">Klaus Kappelhoff</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__media card__media--alt-1">
+            B-Jugend
+            <img src="assets/B-Jugend.jpeg" alt="B/A-Jugend Mannschaftsfoto" loading="lazy" onerror="this.remove()">
+            <span class="card__tag">U16 – U17</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">B-Jugend</h3>
+            <p class="card__excerpt">Hochwertiger Wettkampfsport &amp; Vorbereitung auf den Aktivenbereich.</p>
+            <div class="team-meta">
+              <div class="team-meta-row"><span class="team-meta-row__label">Training</span><span class="team-meta-row__value">Dienstag, 18:00 Uhr in Lauffen<br>Donnerstag, 18:00 Uhr in Meimsheim</span></div>
+              <div class="team-meta-row"><span class="team-meta-row__label">Trainer</span><span class="team-meta-row__value">Emrah Görgü</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__media card__media--alt-1">
+            A-Jugend
+            <img src="assets/A-Jugend.jpeg" alt="B/A-Jugend Mannschaftsfoto" loading="lazy" onerror="this.remove()">
+            <span class="card__tag">U18 – U19</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">A-Jugend</h3>
+            <p class="card__excerpt">Hochwertiger Wettkampfsport &amp; Vorbereitung auf den Aktivenbereich.</p>
+            <div class="team-meta">
+              <div class="team-meta-row"><span class="team-meta-row__label">Training</span><span class="team-meta-row__value">Dienstag, 18:00 Uhr in Lauffen<br>Donnerstag, 18:00 Uhr in Meimsheim</span></div>
+              <div class="team-meta-row"><span class="team-meta-row__label">Trainer</span><span class="team-meta-row__value">Marius Nowak</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlight: Frankreich -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="grid grid--2" style="gap: 56px; align-items: center;">
+        <div class="reveal">
+          <span class="eyebrow" style="color: var(--accent);">Highlight des Jahres</span>
+          <h2 class="section__title">Austausch mit La Ferté-Bernard</h2>
+          <p>Jedes Jahr fährt eine unserer Jugendmannschaften zu unserer Partnerstadt nach Frankreich – und im Gegenzug heißen wir die Franzosen bei uns willkommen. Diese Reisen sind für alle Beteiligten ein unvergessliches Erlebnis: Fußball, neue Freundschaften und Kultur pur.</p>
+          <a href="news.html" class="btn btn--primary mt-4">Berichte zum Austausch</a>
+        </div>
+        <div class="reveal">
+          <div style="background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); border-radius: var(--r-xl); padding: 28px;">
+            <div style="display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,.1);">
+              <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--brand); display: grid; place-items: center; color: #fff; font-family: var(--font-display); font-size: 1.4rem;">21<br><span style="font-size:.6rem">APR</span></div>
+              <div>
+                <div style="font-weight: 700; color: #fff;">Osterfahrt der D-Jugend</div>
+                <div style="font-size: .85rem; color: var(--text-on-dark-soft);">Freundschaft, Fußball und unvergessliche Momente</div>
+              </div>
+            </div>
+            <div style="display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; padding-top: 16px;">
+              <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; color: #14161b; font-family: var(--font-display); font-size: 1.4rem;">26<br><span style="font-size:.6rem">APR</span></div>
+              <div>
+                <div style="font-weight: 700; color: #fff;">Internationales E-Jugend Turnier</div>
+                <div style="font-size: .85rem; color: var(--text-on-dark-soft);">Fußball, Gastfreundschaft und unvergessliche Erlebnisse</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div>
+          <h2>Dein Kind möchte mitmachen?</h2>
+          <p>Wir freuen uns auf neue Spielerinnen und Spieler in jeder Altersklasse. Schau einfach beim Training vorbei!</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="kontakt.html" class="btn btn--light">Kontakt zur Jugend</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="color: #fff"><span class="brand__logo"><img src="assets/SFLschwarz.jpeg" alt="SFL Wappen"></span><span class="brand__name" style="color:#fff">Sportfreunde Lauffen<small style="color: var(--text-on-dark-soft)">Tradition seit 1920</small></span></a>
+          <p style="margin-top: 16px; max-width: 36ch;">Der Fußballverein im Herzen von Lauffen am Neckar.</p>
+        </div>
+        <div><h4>Verein</h4><ul><li><a href="verein.html">Über uns</a></li><li><a href="verein.html">Vorstand</a></li><li><a href="kooperation.html">Kooperation TSG Hoffenheim</a></li><li><a href="news.html">News</a></li><li><a href="sponsoren.html">Sponsoren</a></li></ul></div>
+        <div><h4>Sport</h4><ul><li><a href="mannschaften.html">1. Mannschaft</a></li><li><a href="mannschaften.html">2. Mannschaft</a></li><li><a href="jugend.html">Jugend</a></li><li><a href="news.html">Spielberichte</a></li></ul></div>
+        <div><h4>Kontakt</h4><ul><li>Sportgelände Lauffen</li><li>74348 Lauffen am Neckar</li><li><a href="mailto:info@sportfreunde-lauffen.de">info@sportfreunde-lauffen.de</a></li><li><a href="kontakt.html">Anfahrt &amp; Impressum</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2016 – <span data-year>2026</span> Sportfreunde Lauffen e.V.</span>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.5 13.4 6 14.5 6H17V2h-3.2C10.7 2 9 3.7 9 6.5V10H6v4h3v8h4z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4A11.5 11.5 0 0 0 4 20l-1 4 4-1A11.5 11.5 0 1 0 20 4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

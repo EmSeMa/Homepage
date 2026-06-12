@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.openstreetmap.org; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>News &amp; Berichte – Sportfreunde Lauffen</title>
+  <meta name="description" content="Aktuelle News, Spielberichte und Veranstaltungen der Sportfreunde Lauffen." />
+  <link rel="icon" type="image/jpeg" href="assets/SFLweiss.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    .filters { display:flex; gap:8px; flex-wrap:wrap; margin-bottom: 32px; }
+    .filter-pill {
+      padding: 10px 18px; border-radius: var(--r-pill);
+      background: var(--bg-soft); border: 1px solid var(--border);
+      font-weight: 600; font-size: .9rem; cursor: pointer;
+      transition: all var(--t-fast) var(--ease);
+    }
+    .filter-pill:hover { border-color: var(--brand); color: var(--brand); }
+    .filter-pill.is-active { background: var(--brand); color: #fff; border-color: var(--brand); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html" class="brand"><span class="brand__logo"><img src="assets/SFLweiss.jpeg" alt="SFL Wappen"></span><span class="brand__name">Sportfreunde Lauffen<small>Tradition seit 1920</small></span></a>
+        <ul class="nav__menu">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="verein.html">Verein</a></li>
+          <li><a href="mannschaften.html">Aktive</a></li>
+          <li><a href="jugend.html">Jugend</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="sponsoren.html">Sponsoren</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="nav__cta"><a href="kontakt.html" class="btn btn--primary">Mitglied werden</a></div>
+        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs"><a href="index.html">Start</a> <span>/</span> <span>News</span></nav>
+      <span class="eyebrow" style="color: var(--accent)">Aus dem Verein</span>
+      <h1>News &amp; Berichte</h1>
+      <p>Spielberichte, Vereinsleben, Veranstaltungen – alles, was die Sportfreunde Lauffen bewegt.</p>
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section class="section section--tight">
+    <div class="container">
+      <article class="reveal" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: stretch; background: var(--bg-elev); border: 1px solid var(--border); border-radius: var(--r-xl); overflow: hidden;">
+        <div style="aspect-ratio: 16/10; position: relative; min-height: 320px; overflow: hidden; background: #0e1014;">
+          <img src="assets/WeinImPark.jpeg" alt="Wein im Park" loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; object-fit: contain;">
+          <span class="card__tag" style="position: absolute; top:16px; left:16px; z-index:2; background: rgba(255,255,255,.18); backdrop-filter: blur(10px); color:#fff;">TOP-Bericht</span>
+          <div style="position:absolute; right:16px; bottom:16px; z-index:2; background: rgba(0,0,0,.55); backdrop-filter: blur(6px); color:#fff; border-radius: var(--r-sm); padding: 10px 14px; text-align:center; border: 1px solid rgba(255,255,255,.16); font-family: var(--font-display); line-height: 1;">
+            <div style="font-size: 1.4rem;">11</div>
+            <span style="font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; opacity:.85;">Juni 2026</span>
+          </div>
+        </div>
+        <div style="padding: 32px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card__meta"><b>Verein</b> · 11. Juni 2026</div>
+          <h2 style="font-size: clamp(1.4rem, .8rem + 2vw, 2rem); margin: 8px 0 12px;">Wein im Park und Public Viewing</h2>
+          <p style="color: var(--text-soft);">Die Sportfreunde übernehmen die Bewirtung beim "Wein im Park"-Festival und zeigen das Spiel der deutschen Nationalmannschaft am Samstag auf Großleinwand. Ein perfekter Sommerabend mit Wein, Fußball und Freunden – wir freuen uns auf euch!</p>
+          <div class="mt-4"><a href="#" class="btn btn--primary">Vollständigen Artikel lesen</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Filter & list -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="filters reveal" role="tablist">
+        <button class="filter-pill is-active" data-filter="all">Alle Berichte</button>
+        <button class="filter-pill" data-filter="verein">Verein</button>
+        <button class="filter-pill" data-filter="1mannschaft">1. Mannschaft</button>
+        <button class="filter-pill" data-filter="2mannschaft">2. Mannschaft</button>
+        <button class="filter-pill" data-filter="jugend">Jugend</button>
+      </div>
+
+      <div class="grid grid--3" id="news-grid">
+        <!-- 1 -->
+        <article class="card reveal" data-cat="verein">
+          <div class="card__media"><img src="assets/WeinImPark.jpeg" alt="Wein im Park" loading="lazy"><span class="card__date"><b>11</b><span>Jun 2026</span></span><span class="card__tag card__tag--accent">Verein</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>Verein</b> · 11.06.2026</div>
+            <h3 class="card__title">Wein im Park und Public Viewing</h3>
+            <p class="card__excerpt">Die Sportfreunde übernehmen die Bewirtung beim Wein im Park und zeigen das Spiel der DFB-Elf.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 2 -->
+        <article class="card reveal" data-cat="verein">
+          <div class="card__media"><img src="assets/Elfmeter.png" alt="Elfmeterturnier" loading="lazy"><span class="card__date"><b>06</b><span>Mai 2026</span></span><span class="card__tag card__tag--dark">Verein</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>Verein</b> · 06.05.2026</div>
+            <h3 class="card__title">Anmeldung Elfmeterturnier 2026</h3>
+            <p class="card__excerpt">Die Anmeldung für unser Elfmeterturnier ist geöffnet!</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 3 -->
+        <article class="card reveal" data-cat="jugend">
+          <div class="card__media"><img src="assets/LaFerte.jpeg" alt="D-Jugend in La Ferté-Bernard" loading="lazy"><span class="card__date"><b>21</b><span>Apr 2026</span></span><span class="card__tag">Jugend</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>Jugend</b> · 21.04.2026</div>
+            <h3 class="card__title">Osterfahrt der D-Jugend nach La Ferté-Bernard</h3>
+            <p class="card__excerpt">Freundschaft, Fußball und unvergessliche Momente in Frankreich.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 4 -->
+        <article class="card reveal" data-cat="verein">
+          <div class="card__media"><img src="assets/termine.jpg" alt="Veranstaltungen 2026" loading="lazy"><span class="card__date"><b>29</b><span>Mär 2026</span></span><span class="card__tag card__tag--accent">Verein</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>Verein</b> · 29.03.2026</div>
+            <h3 class="card__title">Die ersten Veranstaltungen 2026 stehen…</h3>
+            <p class="card__excerpt">Schaut vorbei – wir freuen uns auf einen spannenden Veranstaltungssommer.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 5 -->
+        <article class="card reveal" data-cat="2mannschaft">
+          <div class="card__media"><img src="assets/ZweiteMannschaft.jpg" alt="2. Mannschaft" loading="lazy"><span class="card__date"><b>06</b><span>Dez 2025</span></span><span class="card__tag card__tag--dark">2. Mannschaft</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>2. Mannschaft</b> · 06.12.2025</div>
+            <h3 class="card__title">Klarer Sieg</h3>
+            <p class="card__excerpt">Das war verdient – ein souveräner Auftritt unserer Zweiten.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 6 -->
+        <article class="card reveal" data-cat="1mannschaft">
+          <div class="card__media"><img src="assets/ErsteMannschaft.jpg" alt="1. Mannschaft" loading="lazy"><span class="card__date"><b>09</b><span>Nov 2025</span></span><span class="card__tag">1. Mannschaft</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>1. Mannschaft</b> · 09.11.2025</div>
+            <h3 class="card__title">Klarer Sieg für die erste Mannschaft</h3>
+            <p class="card__excerpt">Keine Chance für den Gegner – die Erste zeigt erneut ihre Klasse.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 7 -->
+        <article class="card reveal" data-cat="2mannschaft">
+          <div class="card__media"><img src="assets/ZweiteMannschaft.jpg" alt="2. Mannschaft" loading="lazy"><span class="card__date"><b>09</b><span>Nov 2025</span></span><span class="card__tag card__tag--dark">2. Mannschaft</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>2. Mannschaft</b> · 09.11.2025</div>
+            <h3 class="card__title">Zu viel zugelassen</h3>
+            <p class="card__excerpt">Klatsche für die 2. Mannschaft – Aufarbeitung läuft auf Hochtouren.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 8 -->
+        <article class="card reveal" data-cat="2mannschaft">
+          <div class="card__media"><img src="assets/ZweiteMannschaft.jpg" alt="2. Mannschaft" loading="lazy"><span class="card__date"><b>12</b><span>Okt 2025</span></span><span class="card__tag card__tag--dark">2. Mannschaft</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>2. Mannschaft</b> · 12.10.2025</div>
+            <h3 class="card__title">Gäste siegen</h3>
+            <p class="card__excerpt">Keine Chance für die Sportfreunde an diesem Spieltag.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 9 -->
+        <article class="card reveal" data-cat="1mannschaft">
+          <div class="card__media"><img src="assets/ErsteMannschaft.jpg" alt="1. Mannschaft" loading="lazy"><span class="card__date"><b>12</b><span>Okt 2025</span></span><span class="card__tag">1. Mannschaft</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>1. Mannschaft</b> · 12.10.2025</div>
+            <h3 class="card__title">Knapper Sieg</h3>
+            <p class="card__excerpt">Klare Führung in zweiter Halbzeit fast verspielt.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 10 -->
+        <article class="card reveal" data-cat="2mannschaft">
+          <div class="card__media"><img src="assets/ZweiteMannschaft.jpg" alt="2. Mannschaft" loading="lazy"><span class="card__date"><b>28</b><span>Sep 2025</span></span><span class="card__tag card__tag--dark">2. Mannschaft</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>2. Mannschaft</b> · 28.09.2025</div>
+            <h3 class="card__title">Gäste siegen verdient</h3>
+            <p class="card__excerpt">Sportfreunde verspielen Führung in der Schlussphase.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 11 -->
+        <article class="card reveal" data-cat="1mannschaft">
+          <div class="card__media"><img src="assets/ErsteMannschaft.jpg" alt="1. Mannschaft" loading="lazy"><span class="card__date"><b>28</b><span>Sep 2025</span></span><span class="card__tag">1. Mannschaft</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>1. Mannschaft</b> · 28.09.2025</div>
+            <h3 class="card__title">Noch immer unbesiegt</h3>
+            <p class="card__excerpt">Verdienter Sieg der Sportfreunde – die Serie hält an!</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 12 -->
+        <article class="card reveal" data-cat="2mannschaft">
+          <div class="card__media"><img src="assets/ZweiteMannschaft.jpg" alt="2. Mannschaft" loading="lazy"><span class="card__date"><b>14</b><span>Sep 2025</span></span><span class="card__tag card__tag--dark">2. Mannschaft</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>2. Mannschaft</b> · 14.09.2025</div>
+            <h3 class="card__title">Knapper Sieg</h3>
+            <p class="card__excerpt">Siegtreffer in den letzten Minuten – Drama pur!</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 13 -->
+        <article class="card reveal" data-cat="1mannschaft">
+          <div class="card__media"><img src="assets/ErsteMannschaft.jpg" alt="1. Mannschaft" loading="lazy"><span class="card__date"><b>12</b><span>Sep 2025</span></span><span class="card__tag">1. Mannschaft</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>1. Mannschaft</b> · 12.09.2025</div>
+            <h3 class="card__title">Spitzenspiel endet unentschieden</h3>
+            <p class="card__excerpt">Ausgleich in der 85. Minute – ein Punkt zum Mitnehmen.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 14 -->
+        <article class="card reveal" data-cat="jugend">
+          <div class="card__media"><img src="assets/EJugend.jpeg" alt="E-Jugend Turnier La Ferté-Bernard" loading="lazy"><span class="card__date"><b>26</b><span>Apr 2025</span></span><span class="card__tag card__tag--accent">Jugend</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>E-Jugend</b> · 26.04.2025</div>
+            <h3 class="card__title">Internationales Turnier in La Ferté-Bernard</h3>
+            <p class="card__excerpt">Fußball, Gastfreundschaft und unvergessliche Erlebnisse.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+        <!-- 15 -->
+        <article class="card reveal" data-cat="1mannschaft">
+          <div class="card__media"><img src="assets/ErsteMannschaft.jpg" alt="1. Mannschaft" loading="lazy"><span class="card__date"><b>11</b><span>Mai 2025</span></span><span class="card__tag">1. Mannschaft</span></div>
+          <div class="card__body">
+            <div class="card__meta"><b>1. Mannschaft</b> · 11.05.2025</div>
+            <h3 class="card__title">Klarer Sieg</h3>
+            <p class="card__excerpt">Torwart der Gegner war schwer zu bezwingen – am Ende klarer Erfolg.</p>
+            <div class="card__footer"><a href="#" class="card__link">Weiterlesen →</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-8 reveal">
+        <button class="btn btn--ghost" style="color: var(--brand); border-color: var(--brand)">Weitere Berichte laden</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="color: #fff"><span class="brand__logo"><img src="assets/SFLschwarz.jpeg" alt="SFL Wappen"></span><span class="brand__name" style="color:#fff">Sportfreunde Lauffen<small style="color: var(--text-on-dark-soft)">Tradition seit 1920</small></span></a>
+          <p style="margin-top: 16px; max-width: 36ch;">Der Fußballverein im Herzen von Lauffen am Neckar.</p>
+        </div>
+        <div><h4>Verein</h4><ul><li><a href="verein.html">Über uns</a></li><li><a href="verein.html">Vorstand</a></li><li><a href="kooperation.html">Kooperation TSG Hoffenheim</a></li><li><a href="news.html">News</a></li><li><a href="sponsoren.html">Sponsoren</a></li></ul></div>
+        <div><h4>Sport</h4><ul><li><a href="mannschaften.html">1. Mannschaft</a></li><li><a href="mannschaften.html">2. Mannschaft</a></li><li><a href="jugend.html">Jugend</a></li><li><a href="news.html">Spielberichte</a></li></ul></div>
+        <div><h4>Kontakt</h4><ul><li>Sportgelände Lauffen</li><li>74348 Lauffen am Neckar</li><li><a href="mailto:info@sportfreunde-lauffen.de">info@sportfreunde-lauffen.de</a></li><li><a href="kontakt.html">Anfahrt &amp; Impressum</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2016 – <span data-year>2026</span> Sportfreunde Lauffen e.V.</span>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.5 13.4 6 14.5 6H17V2h-3.2C10.7 2 9 3.7 9 6.5V10H6v4h3v8h4z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4A11.5 11.5 0 0 0 4 20l-1 4 4-1A11.5 11.5 0 1 0 20 4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+  <script>
+    (() => {
+      const filters = document.querySelectorAll('.filter-pill');
+      const cards = document.querySelectorAll('#news-grid > .card');
+      filters.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filters.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          const f = btn.dataset.filter;
+          cards.forEach(c => {
+            const show = f === 'all' || c.dataset.cat === f;
+            c.style.display = show ? '' : 'none';
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

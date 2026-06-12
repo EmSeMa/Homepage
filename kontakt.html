@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.openstreetmap.org; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Kontakt – Sportfreunde Lauffen</title>
+  <meta name="description" content="Kontakt, Anfahrt und Impressum der Sportfreunde Lauffen e.V." />
+  <link rel="icon" type="image/jpeg" href="assets/SFLweiss.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html" class="brand"><span class="brand__logo"><img src="assets/SFLweiss.jpeg" alt="SFL Wappen"></span><span class="brand__name">Sportfreunde Lauffen<small>Tradition seit 1920</small></span></a>
+        <ul class="nav__menu">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="verein.html">Verein</a></li>
+          <li><a href="mannschaften.html">Aktive</a></li>
+          <li><a href="jugend.html">Jugend</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="sponsoren.html">Sponsoren</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="nav__cta"><a href="kontakt.html" class="btn btn--primary">Mitglied werden</a></div>
+        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs"><a href="index.html">Start</a> <span>/</span> <span>Kontakt</span></nav>
+      <span class="eyebrow" style="color: var(--accent)">Sag Hallo</span>
+      <h1>Kontakt</h1>
+      <p>Du hast Fragen, möchtest Mitglied werden oder ein Kind auf Probetraining vorbeischicken? Schreib uns – wir freuen uns auf dich!</p>
+    </div>
+  </section>
+
+  <!-- Contact main -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--2" style="gap: 56px;">
+        <!-- Form -->
+        <div class="reveal">
+          <span class="eyebrow">Nachricht senden</span>
+          <h2 class="section__title">Schreib uns eine Nachricht</h2>
+          <p class="muted">Wir melden uns in der Regel innerhalb von 1–2 Werktagen.</p>
+
+          <form class="form mt-4" data-fake-form>
+            <div class="grid grid--2" style="gap: 16px;">
+              <div class="field">
+                <label for="name">Name *</label>
+                <input id="name" name="name" type="text" required placeholder="Max Mustermann" />
+              </div>
+              <div class="field">
+                <label for="email">E-Mail *</label>
+                <input id="email" name="email" type="email" required placeholder="max@beispiel.de" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="topic">Anliegen</label>
+              <select id="topic" name="topic">
+                <option>Allgemeine Anfrage</option>
+                <option>Mitgliedschaft</option>
+                <option>Probetraining</option>
+                <option>Sponsoring</option>
+                <option>Jugend</option>
+                <option>Sonstiges</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="msg">Nachricht *</label>
+              <textarea id="msg" name="msg" required placeholder="Deine Nachricht…"></textarea>
+            </div>
+
+            <label style="display:flex; gap:10px; align-items:flex-start; font-size:.85rem; color: var(--text-soft);">
+              <input type="checkbox" required style="margin-top: 4px;">
+              <span>Ich habe die <a href="#impressum" style="color: var(--brand);">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten einverstanden.</span>
+            </label>
+
+            <div>
+              <button type="submit" class="btn btn--primary">Nachricht abschicken</button>
+            </div>
+
+            <p data-form-status hidden style="color: var(--brand); font-weight: 600;"></p>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="reveal">
+          <span class="eyebrow">Direkter Kontakt</span>
+          <h2 class="section__title">So erreichst du uns</h2>
+
+          <div class="card" style="margin-bottom: 16px;">
+            <div class="card__body">
+              <div style="display:flex; gap:14px; align-items:center;">
+                <div style="width:46px; height:46px; border-radius:12px; background:rgba(20,22,27,.06); color:var(--brand); display:grid; place-items:center;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <h3 class="card__title" style="margin: 0 0 4px;">Adresse</h3>
+                  <p class="muted" style="margin:0;">Ulrichsheide 5<br>74348 Lauffen am Neckar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom: 16px;">
+            <div class="card__body">
+              <div style="display:flex; gap:14px; align-items:center;">
+                <div style="width:46px; height:46px; border-radius:12px; background:rgba(20,22,27,.06); color:var(--brand); display:grid; place-items:center;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16v16H4zM4 4l8 8 8-8"/></svg>
+                </div>
+                <div>
+                  <h3 class="card__title" style="margin: 0 0 4px;">E-Mail</h3>
+                  <p class="muted" style="margin:0;"><a href="mailto:info@sportfreunde-lauffen.de" style="color: var(--brand);">vorstand@sportfreunde-lauffen.de</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom: 16px;">
+            <div class="card__body">
+              <div style="display:flex; gap:14px; align-items:center;">
+                <div style="width:46px; height:46px; border-radius:12px; background:rgba(20,22,27,.06); color:var(--brand); display:grid; place-items:center;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.13 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <h3 class="card__title" style="margin: 0 0 4px;">Telefon</h3>
+                  <p class="muted" style="margin:0;">+49 151 46701255</p>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section section--tight section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Anfahrt</span>
+          <h2 class="section__title">So findest du uns</h2>
+        </div>
+      </div>
+
+      <div class="reveal" style="border-radius: var(--r-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
+        <iframe
+          title="Karte Sportgelände Lauffen"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=9.1325%2C49.0680%2C9.1625%2C49.0820&amp;layer=mapnik&amp;marker=49.0750%2C9.1475"
+          style="width:100%; height:480px; border:0; display:block;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">FAQ</span>
+          <h2 class="section__title">Häufige Fragen</h2>
+        </div>
+      </div>
+
+      <div class="grid grid--2 reveal">
+        <details class="card" style="padding: 22px;">
+          <summary style="font-weight: 700; cursor: pointer; list-style: none;">Wie kann ich Mitglied werden?</summary>
+          <p class="muted mt-4">Schreib uns einfach über das Kontaktformular oder komm beim Training vorbei. Du erhältst einen Mitgliedsantrag und kannst nach einem Probetraining direkt einsteigen.</p>
+        </details>
+        <details class="card" style="padding: 22px;">
+          <summary style="font-weight: 700; cursor: pointer; list-style: none;">Was kostet die Mitgliedschaft?</summary>
+          <p class="muted mt-4">Aktive Mitglieder zahlen 120 €/Jahr, Jugendliche 120 €/Jahr, Familien profitieren von einem Familienbeitrag. Passive Mitgliedschaft 80 €/Jahr.</p>
+        </details>
+        <details class="card" style="padding: 22px;">
+          <summary style="font-weight: 700; cursor: pointer; list-style: none;">Kann mein Kind ein Probetraining machen?</summary>
+          <p class="muted mt-4">Selbstverständlich! Schreib uns kurz, in welcher Altersklasse dein Kind spielen möchte – wir vermitteln den Kontakt zum jeweiligen Trainer.</p>
+        </details>
+        <details class="card" style="padding: 22px;">
+          <summary style="font-weight: 700; cursor: pointer; list-style: none;">Habt ihr ein Vereinsheim?</summary>
+          <p class="muted mt-4">Ja! Unser Vereinsheim am Sportgelände ist Treffpunkt nach Spielen und bei Vereinsfeiern. Hier kann man entspannt Essen und Trinken genießen.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impressum -->
+  <section id="impressum" class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Rechtliches</span>
+          <h2 class="section__title">Impressum &amp; Datenschutz</h2>
+        </div>
+      </div>
+
+      <div class="grid grid--2" style="gap: 32px;">
+        <div class="card reveal" style="padding: 32px;">
+          <h3 class="card__title">Impressum</h3>
+          <p class="muted">Sportfreunde Lauffen e.V.<br>
+            Ulrichsheide 5<br>
+            74348 Lauffen am Neckar</p>
+          <p class="muted">
+            Vertretungsberechtigter Vorstand:<br>
+            Lukas Losch (1. Vorsitzender)<br>
+            Patrick Lopez (2. Vorsitzende)
+          </p>
+          <p class="muted">
+            Vereinsregister: VR 12345 — Amtsgericht Heilbronn<br>
+            E-Mail: <a href="mailto:info@sportfreunde-lauffen.de" style="color: var(--brand)">vorstand@sportfreunde-lauffen.de</a><br>
+            Telefon: 0151 46701255
+          </p>
+        </div>
+
+        <div class="card reveal" style="padding: 32px;">
+          <h3 class="card__title">Datenschutz</h3>
+          <p class="muted">Wir behandeln deine Daten vertraulich und verwenden sie ausschließlich zur Beantwortung deiner Anfrage. Es findet keine Weitergabe an Dritte statt.</p>
+          <p class="muted">Für unsere Webseite werden ausschließlich technisch notwendige Cookies verwendet. Tracking, Werbe- oder Drittanbieter-Cookies kommen nicht zum Einsatz.</p>
+          <p class="muted">Bei Fragen zum Datenschutz wende dich bitte direkt an unseren Vorstand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="color: #fff"><span class="brand__logo"><img src="assets/SFLschwarz.jpeg" alt="SFL Wappen"></span><span class="brand__name" style="color:#fff">Sportfreunde Lauffen<small style="color: var(--text-on-dark-soft)">Tradition seit 1920</small></span></a>
+          <p style="margin-top: 16px; max-width: 36ch;">Der Fußballverein im Herzen von Lauffen am Neckar.</p>
+        </div>
+        <div><h4>Verein</h4><ul><li><a href="verein.html">Über uns</a></li><li><a href="verein.html">Vorstand</a></li><li><a href="kooperation.html">Kooperation TSG Hoffenheim</a></li><li><a href="news.html">News</a></li><li><a href="sponsoren.html">Sponsoren</a></li></ul></div>
+        <div><h4>Sport</h4><ul><li><a href="mannschaften.html">1. Mannschaft</a></li><li><a href="mannschaften.html">2. Mannschaft</a></li><li><a href="jugend.html">Jugend</a></li><li><a href="news.html">Spielberichte</a></li></ul></div>
+        <div><h4>Kontakt</h4><ul><li>Sportgelände Lauffen</li><li>74348 Lauffen am Neckar</li><li><a href="mailto:info@sportfreunde-lauffen.de">info@sportfreunde-lauffen.de</a></li><li><a href="kontakt.html">Anfahrt &amp; Impressum</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2016 – <span data-year>2026</span> Sportfreunde Lauffen e.V.</span>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.5 13.4 6 14.5 6H17V2h-3.2C10.7 2 9 3.7 9 6.5V10H6v4h3v8h4z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4A11.5 11.5 0 0 0 4 20l-1 4 4-1A11.5 11.5 0 1 0 20 4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.openstreetmap.org; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Sportfreunde Lauffen – Dein Verein in Lauffen am Neckar</title>
+  <meta name="description" content="Offizielle Webseite der Sportfreunde Lauffen. News, Mannschaften, Spielpläne, Veranstaltungen und mehr." />
+  <link rel="icon" type="image/jpeg" href="assets/SFLweiss.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <!-- News ticker -->
+  <div class="news-ticker" aria-label="Aktuelle Meldungen">
+    <div class="news-ticker__inner">
+      <span>11.07.2026 — 11-Meter-Turnier: Anmeldung geöffnet</span>
+      <span>20/21.06.2026 — Wein im Park &amp; Public Viewing</span>
+      <span>Saisonstart Aktive 2026/27: Trainingsbeginn am 09.07.</span>
+      <span>Neue Sponsoren Herzlich Willkommen!</span>
+      <!-- duplicate for seamless loop -->
+      <span>11.07.2026 — 11-Meter-Turnier: Anmeldung geöffnet</span>
+      <span>20/21.06.2026 — Wein im Park &amp; Public Viewing</span>
+      <span>Saisonstart Aktive  2026/27: Trainingsbeginn am 09.07.</span>
+      <span>Neue Sponsoren Herzlich Willkommen!</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html" class="brand" aria-label="Sportfreunde Lauffen Startseite">
+          <span class="brand__logo"><img src="assets/SFLweiss.jpeg" alt="SFL Wappen"></span>
+          <span class="brand__name">
+            Sportfreunde Lauffen
+            <small>Tradition seit 1920</small>
+          </span>
+        </a>
+
+        <ul class="nav__menu">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="verein.html">Verein</a></li>
+          <li><a href="mannschaften.html">Aktive</a></li>
+          <li><a href="jugend.html">Jugend</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="sponsoren.html">Sponsoren</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+        <div class="nav__cta">
+          <a href="kontakt.html" class="btn btn--primary">Mitglied werden</a>
+        </div>
+
+        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <span class="hero__badge">Saison 2026 / 2027</span>
+        <h1 class="hero__title">Mehr als ein Verein.<br><span class="accent">Wir sind Heimat.</span></h1>
+        <p class="hero__lead">
+          Seit über 100 Jahren stehen die Sportfreunde Lauffen für Leidenschaft, Gemeinschaft und Fairplay.
+          Vom Bambini bis zur ersten Mannschaft – wir leben Fußball mitten im Neckartal.
+        </p>
+        <div class="hero__cta">
+          <a href="mannschaften.html" class="btn btn--primary">
+            Unsere Mannschaften
+            <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="kontakt.html" class="btn btn--ghost">Probetraining vereinbaren</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat"><b>105+</b><span>Jahre Tradition</span></div>
+          <div class="hero__stat"><b>9</b><span>Aktive Teams</span></div>
+          <div class="hero__stat"><b>250+</b><span>Mitglieder</span></div>
+        </div>
+      </div>
+
+      <aside class="hero__card" aria-label="Nächstes Event">
+        <span class="eyebrow" style="color: var(--accent)">Nächstes Highlight</span>
+        <h3>11-Meter-Turnier 2026</h3>
+        <p>Samstag, 11. Juli 2026 — Sportgelände Lauffen. Anmeldung jetzt geöffnet!</p>
+        <div class="countdown" data-countdown="2026-07-11T14:00:00">
+          <div><b data-cd="d">--</b><span>Tage</span></div>
+          <div><b data-cd="h">--</b><span>Std</span></div>
+          <div><b data-cd="m">--</b><span>Min</span></div>
+          <div><b data-cd="s">--</b><span>Sek</span></div>
+        </div>
+        <a href="news.html" class="btn btn--light">
+          Zur Anmeldung
+          <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Aktuelle Berichte -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">News &amp; Berichte</span>
+          <h2 class="section__title">Aktuell aus dem Verein</h2>
+          <p class="section__sub">Spielberichte, Vereinsleben und alles, was die Sportfreunde bewegt.</p>
+        </div>
+        <a href="news.html" class="btn btn--ghost" style="color: var(--brand); border-color: var(--brand)">Alle Berichte</a>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="assets/WeinImPark.jpeg" alt="Wein im Park" loading="lazy">
+            <span class="card__date"><b>11</b><span>Jun 2026</span></span>
+            <span class="card__tag card__tag--accent">Verein</span>
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Verein</b> · 11. Juni 2026</div>
+            <h3 class="card__title">Wein im Park &amp; Public Viewing</h3>
+            <p class="card__excerpt">Die Sportfreunde übernehmen die Bewirtung beim Wein im Park und zeigen das Spiel der deutschen Nationalmannschaft am Samstag.</p>
+            <div class="card__footer">
+              <a href="news.html" class="card__link">Weiterlesen <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="assets/Elfmeter.png" alt="Elfmeterturnier" loading="lazy">
+            <span class="card__date"><b>06</b><span>Mai 2026</span></span>
+            <span class="card__tag card__tag--dark">Turnier</span>
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Verein</b> · 6. Mai 2026</div>
+            <h3 class="card__title">Anmeldung Elfmeterturnier 2026</h3>
+            <p class="card__excerpt">Die Anmeldung für unser legendäres Elfmeterturnier am 11. Juli ist geöffnet. Sichert euch jetzt einen der begehrten Plätze!</p>
+            <div class="card__footer">
+              <a href="news.html" class="card__link">Anmelden <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="assets/LaFerte.jpeg" alt="D-Jugend in La Ferté-Bernard" loading="lazy">
+            <span class="card__date"><b>21</b><span>Apr 2026</span></span>
+            <span class="card__tag">Jugend</span>
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Jugend</b> · 21. April 2026</div>
+            <h3 class="card__title">Osterfahrt der D-Jugend nach La Ferté-Bernard</h3>
+            <p class="card__excerpt">Freundschaft, Fußball und unvergessliche Momente in Frankreich – unsere D-Jugend zu Gast in der Partnerstadt.</p>
+            <div class="card__footer">
+              <a href="news.html" class="card__link">Bericht lesen <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spielergebnisse -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Letzte Spiele</span>
+          <h2 class="section__title">Aus dem Spielbetrieb</h2>
+        </div>
+        <a href="mannschaften.html" class="btn btn--ghost" style="color: var(--brand); border-color: var(--brand)">Zu allen Spielen</a>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="match reveal">
+          <div class="match__team">
+            <div class="match__crest">SFL</div>
+            <div class="match__name"><b>Spfr Lauffen I</b><span>1. Mannschaft</span></div>
+          </div>
+          <div class="match__center">
+            <div class="match__score">3 : 1</div>
+            <span class="match__when">Sa 09.11.2025</span>
+          </div>
+          <div class="match__team match__team--away">
+            <div class="match__crest match__crest--neutral">GST</div>
+            <div class="match__name"><b>Gastverein</b><span>Bezirksliga</span></div>
+          </div>
+        </div>
+
+        <div class="match reveal">
+          <div class="match__team">
+            <div class="match__crest">SFL</div>
+            <div class="match__name"><b>Spfr Lauffen II</b><span>2. Mannschaft</span></div>
+          </div>
+          <div class="match__center">
+            <div class="match__score">2 : 4</div>
+            <span class="match__when">Sa 09.11.2025</span>
+          </div>
+          <div class="match__team match__team--away">
+            <div class="match__crest match__crest--neutral">GST</div>
+            <div class="match__name"><b>Gastverein II</b><span>Kreisliga B</span></div>
+          </div>
+        </div>
+
+        <div class="match reveal">
+          <div class="match__team">
+            <div class="match__crest">SFL</div>
+            <div class="match__name"><b>Spfr Lauffen I</b><span>1. Mannschaft</span></div>
+          </div>
+          <div class="match__center">
+            <div class="match__score">2 : 2</div>
+            <span class="match__when">Fr 12.09.2025</span>
+          </div>
+          <div class="match__team match__team--away">
+            <div class="match__crest match__crest--neutral">SPS</div>
+            <div class="match__name"><b>Spitzenreiter</b><span>Bezirksliga</span></div>
+          </div>
+        </div>
+
+        <div class="match reveal">
+          <div class="match__team">
+            <div class="match__crest">SFL</div>
+            <div class="match__name"><b>Spfr Lauffen II</b><span>2. Mannschaft</span></div>
+          </div>
+          <div class="match__center">
+            <div class="match__score">3 : 2</div>
+            <span class="match__when">So 14.09.2025</span>
+          </div>
+          <div class="match__team match__team--away">
+            <div class="match__crest match__crest--neutral">GST</div>
+            <div class="match__name"><b>Gastverein</b><span>Kreisliga B</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mannschaften Highlights -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Unsere Teams</span>
+          <h2 class="section__title">Vom Bambini bis zur Ersten</h2>
+          <p class="section__sub">Über alle Altersklassen hinweg: bei den Sportfreunden findet jede:r seinen Platz.</p>
+        </div>
+      </div>
+
+      <div class="grid grid--3">
+        <a href="mannschaften.html" class="card reveal">
+          <div class="card__media">
+            <img src="assets/ErsteMannschaft.jpg" alt="1. Mannschaft" loading="lazy">
+            <span class="card__tag card__tag--dark">Aktive</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">1. Mannschaft</h3>
+            <p class="card__excerpt">Unser Aushängeschild – Bezirksliga, Heimspiele samstags 15:30 Uhr.</p>
+            <div class="card__footer"><span class="card__link">Mehr erfahren →</span></div>
+          </div>
+        </a>
+
+        <a href="mannschaften.html" class="card reveal">
+          <div class="card__media">
+            <img src="assets/ZweiteMannschaft.jpg" alt="2. Mannschaft" loading="lazy">
+            <span class="card__tag">Aktive</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">2. Mannschaft</h3>
+            <p class="card__excerpt">Kameradschaft &amp; Spaß am Fußball auf Kreisliga-Niveau.</p>
+            <div class="card__footer"><span class="card__link">Mehr erfahren →</span></div>
+          </div>
+        </a>
+
+        <a href="jugend.html" class="card reveal">
+          <div class="card__media">
+            <img src="assets/EJugend.jpeg" alt="Jugendabteilung" loading="lazy">
+            <span class="card__tag card__tag--accent">Jugend</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Jugendabteilung</h3>
+            <p class="card__excerpt">Bambini bis A-Jugend – mit Herz, Engagement und qualifizierten Trainern.</p>
+            <div class="card__footer"><span class="card__link">Mehr erfahren →</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Termine</span>
+          <h2 class="section__title">Kommende Veranstaltungen</h2>
+          <p class="section__sub">Spiele, Turniere und Vereinsevents – seid dabei.</p>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="event">
+          <div class="event__date"><b>20/21</b><span>Jun</span></div>
+          <div>
+            <div class="event__title">Wein im Park &amp; Public Viewing</div>
+            <div class="event__meta">
+              <span>📍 Stadtpark Lauffen</span>
+              <span>🕒 ab 17:00 Uhr</span>
+              <span>🎯 EM-Spiel der DFB-Elf</span>
+            </div>
+          </div>
+          <a href="news.html" class="btn btn--primary event__cta">Mehr Infos</a>
+        </div>
+        <div class="event">
+          <div class="event__date"><b>09</b><span>Jul</span></div>
+          <div>
+            <div class="event__title">Trainingsauftakt Saison 2026/27</div>
+            <div class="event__meta">
+              <span>📍 Sportplatz</span>
+              <span>🕒 19:00 Uhr</span>
+              <span>👟 Aktive 1. &amp; 2.</span>
+            </div>
+          </div>          
+        </div>
+        <div class="event">
+          <div class="event__date"><b>11</b><span>Jul</span></div>
+          <div>
+            <div class="event__title">11-Meter-Turnier 2026</div>
+            <div class="event__meta">
+              <span>📍 Sportgelände Lauffen</span>
+              <span>🕒 ab 14:00 Uhr</span>
+              <span>🏆 Hobby-Mannschaften</span>
+            </div>
+          </div>
+          <a href="news.html" class="btn btn--primary event__cta">Anmelden</a>
+        </div>
+        
+        <div class="event">
+          <div class="event__date"><b>18</b><span>JUL</span></div>
+          <div>
+            <div class="event__title">Vereinsfototermin</div>
+            <div class="event__meta">
+              <span>📍 Sportgelände Lauffen</span>
+              <span>🕒 ab 10:00 Uhr</span>
+              <span></span>
+            </div>
+          </div>
+          <a href="kontakt.html" class="btn btn--ghost event__cta" style="color: var(--brand); border-color: var(--brand)">Vormerken</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section">
+    <div class="container">
+      <div class="stat-strip reveal">
+        <div><b>1.240.000+</b><span>Webseitenbesuche</span></div>
+        <div><b>9</b><span>Aktive Teams</span></div>
+        <div><b>250+</b><span>Mitglieder</span></div>
+        <div><b>105</b><span>Jahre Tradition</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsoren -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Partner &amp; Sponsoren</span>
+          <h2 class="section__title">Gemeinsam stark</h2>
+          <p class="section__sub">Wir sagen Danke an unsere Partner, die unsere Arbeit überhaupt erst möglich machen.</p>
+        </div>
+        <a href="sponsoren.html" class="btn btn--ghost" style="color: var(--brand); border-color: var(--brand)">Sponsor werden</a>
+      </div>
+
+      <div class="sponsors reveal">
+        <div class="sponsor"><img src="assets/Schunk.jpg" alt="Schunk" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/Losch.png" alt="Losch" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/allianz.png" alt="Allianz" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/MuellerPlanbau.jpg" alt="Müller Planbau" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/Seybold.jpeg" alt="Seybold" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/Sunjic.jpeg" alt="Sunjic" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/KTS.jpg" alt="KTS" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/FKMotorsport.png" alt="FK Motorsport" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div>
+          <h2>Werde Teil der Sportfreunde-Familie</h2>
+          <p>Egal ob als Spieler:in, Trainer:in, Helfer:in oder Sponsor – bei uns findet jede:r seinen Platz.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="kontakt.html" class="btn btn--light">Mitglied werden</a>
+          <a href="sponsoren.html" class="btn btn--ghost" style="color:#fff; border-color:#fff">Sponsor werden</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="color: #fff">
+            <span class="brand__logo"><img src="assets/SFLschwarz.jpeg" alt="SFL Wappen"></span>
+            <span class="brand__name" style="color:#fff">
+              Sportfreunde Lauffen
+              <small style="color: var(--text-on-dark-soft)">Tradition seit 1920</small>
+            </span>
+          </a>
+          <p style="margin-top: 16px; max-width: 36ch;">
+            Der Fußballverein im Herzen von Lauffen am Neckar. Familiär, leidenschaftlich, ambitioniert.
+          </p>
+          <div class="footer-stats">
+            <div><b>149</b><span>Heute online</span></div>
+            <div><b>4.661</b><span>Diesen Monat</span></div>
+            <div><b>1.24M+</b><span>Total</span></div>
+          </div>
+        </div>
+
+        <div>
+          <h4>Verein</h4>
+          <ul>
+            <li><a href="verein.html">Über uns</a></li>
+            <li><a href="verein.html">Vorstand</a></li>
+            <li><a href="kooperation.html">Kooperation TSG Hoffenheim</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="sponsoren.html">Sponsoren</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Sport</h4>
+          <ul>
+            <li><a href="mannschaften.html">1. Mannschaft</a></li>
+            <li><a href="mannschaften.html">2. Mannschaft</a></li>
+            <li><a href="jugend.html">Jugend</a></li>
+            <li><a href="news.html">Spielberichte</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li>Sportgelände Lauffen</li>
+            <li>74348 Lauffen am Neckar</li>
+            <li><a href="mailto:info@sportfreunde-lauffen.de">info@sportfreunde-lauffen.de</a></li>
+            <li><a href="kontakt.html">Anfahrt &amp; Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2016 – <span data-year>2026</span> Sportfreunde Lauffen e.V.</span>
+        <div class="socials" aria-label="Soziale Medien">
+          <a href="#" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.5 13.4 6 14.5 6H17V2h-3.2C10.7 2 9 3.7 9 6.5V10H6v4h3v8h4z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4A11.5 11.5 0 0 0 4 20l-1 4 4-1A11.5 11.5 0 1 0 20 4zm-8 19a9.5 9.5 0 0 1-4.8-1.3l-.4-.2-2.4.6.6-2.3-.2-.4A9.5 9.5 0 1 1 12 23zm5.4-7.1c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.2-.8.9-1 1.1-.4.2-.7.1c-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.7-1-2.3c-.3-.6-.6-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.2-.2-.3-.5-.4z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

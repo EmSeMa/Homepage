@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.openstreetmap.org; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Verein – Sportfreunde Lauffen</title>
+  <meta name="description" content="Geschichte, Werte und Vorstand der Sportfreunde Lauffen e.V." />
+  <link rel="icon" type="image/jpeg" href="assets/SFLweiss.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html" class="brand" aria-label="Sportfreunde Lauffen Startseite">
+          <span class="brand__logo"><img src="assets/SFLweiss.jpeg" alt="SFL Wappen"></span>
+          <span class="brand__name">Sportfreunde Lauffen<small>Tradition seit 1920</small></span>
+        </a>
+        <ul class="nav__menu">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="verein.html">Verein</a></li>
+          <li><a href="mannschaften.html">Aktive</a></li>
+          <li><a href="jugend.html">Jugend</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="sponsoren.html">Sponsoren</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="nav__cta"><a href="kontakt.html" class="btn btn--primary">Mitglied werden</a></div>
+        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs"><a href="index.html">Start</a> <span>/</span> <span>Verein</span></nav>
+      <span class="eyebrow" style="color: var(--accent)">Über uns</span>
+      <h1>Unser Verein</h1>
+      <p>Über 100 Jahre Geschichte, Tradition und Leidenschaft – die Sportfreunde Lauffen sind weit mehr als ein Fußballverein.</p>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--2" style="gap: 56px; align-items: center;">
+        <div class="reveal">
+          <span class="eyebrow">Unsere Geschichte</span>
+          <h2 class="section__title">Seit 1920 am Ball</h2>
+          <p>
+            Gegründet im Jahre 1920 prägen die Sportfreunde Lauffen seit über einem Jahrhundert das sportliche und gesellschaftliche
+            Leben in Lauffen am Neckar. Was als kleiner Zusammenschluss fußballbegeisterter Männer begann, ist heute ein moderner
+            Breitensportverein mit aktiven Mannschaften vom Bambini-Bereich bis zur Ersten.
+          </p>
+          <p>
+            Generationen von Lauffenerinnen und Lauffenern haben hier ihre Liebe zum Fußball gefunden – und ihre Freunde fürs Leben.
+          </p>
+          <a href="news.html" class="btn btn--primary mt-4">Aktuelle Berichte ansehen</a>
+        </div>
+        <div class="reveal">
+          <div style="background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%); border-radius: var(--r-xl); padding: 40px; color:#fff; box-shadow: var(--shadow-lg); position: relative; overflow: hidden;">
+            <div style="position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; border-radius: 50%; background: rgba(255,255,255,.08);"></div>
+            <div style="position: absolute; bottom: -60px; left: -20px; width: 240px; height: 240px; border-radius: 50%; background: rgba(0,0,0,.15);"></div>
+            <div style="position: relative;">
+              <div style="font-family: var(--font-display); font-size: 5rem; line-height: 1; color: var(--accent);">1920</div>
+              <p style="font-size: 1.15rem; margin-top: 12px;">Das Gründungsjahr der Sportfreunde Lauffen.</p>
+              <hr style="border:0; border-top: 1px solid rgba(255,255,255,.18); margin: 24px 0;">
+              <div class="grid grid--2" style="gap: 12px;">
+                <div><div style="font-family: var(--font-display); font-size: 1.6rem; color: var(--accent)">9</div><span style="font-size:.75rem; letter-spacing:.12em; text-transform:uppercase;">Aktive Mannschaften</span></div>
+                <div><div style="font-family: var(--font-display); font-size: 1.6rem; color: var(--accent)">250+</div><span style="font-size:.75rem; letter-spacing:.12em; text-transform:uppercase;">Mitglieder</span></div>
+                <div><div style="font-family: var(--font-display); font-size: 1.6rem; color: var(--accent)">3</div><span style="font-size:.75rem; letter-spacing:.12em; text-transform:uppercase;">Plätze</span></div>
+                <div><div style="font-family: var(--font-display); font-size: 1.6rem; color: var(--accent)">1</div><span style="font-size:.75rem; letter-spacing:.12em; text-transform:uppercase;">Vereinsheim</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Werte -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Unsere Werte</span>
+          <h2 class="section__title">Wofür wir stehen</h2>
+          <p class="section__sub">Diese Grundsätze prägen unser Vereinsleben – auf dem Platz und daneben.</p>
+        </div>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card reveal">
+          <div class="card__body">
+            <div style="width:54px; height:54px; border-radius:14px; background:rgba(20,22,27,.06); color:var(--brand); display:grid; place-items:center; margin-bottom:16px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="card__title">Gemeinschaft</h3>
+            <p class="card__excerpt">Bei uns ist jeder willkommen. Wir leben Vereinsleben mit Herz, Humor und Hilfsbereitschaft.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__body">
+            <div style="width:54px; height:54px; border-radius:14px; background:rgba(20,22,27,.06); color:var(--brand); display:grid; place-items:center; margin-bottom:16px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M9 14l-2 8 5-3 5 3-2-8"/></svg>
+            </div>
+            <h3 class="card__title">Fairplay</h3>
+            <p class="card__excerpt">Respekt vor Mitspielern, Gegnern und Schiedsrichtern ist die Basis für sportlichen Erfolg.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__body">
+            <div style="width:54px; height:54px; border-radius:14px; background:rgba(20,22,27,.06); color:var(--brand); display:grid; place-items:center; margin-bottom:16px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3 class="card__title">Tradition &amp; Vision</h3>
+            <p class="card__excerpt">Wir bewahren, was uns ausmacht und entwickeln den Verein zukunftsorientiert weiter.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__body">
+            <div style="width:54px; height:54px; border-radius:14px; background:rgba(20,22,27,.06); color:var(--brand); display:grid; place-items:center; margin-bottom:16px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/></svg>
+            </div>
+            <h3 class="card__title">Jugendförderung</h3>
+            <p class="card__excerpt">Wir investieren in qualifizierte Trainer und ein modernes Trainingskonzept für unseren Nachwuchs.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__body">
+            <div style="width:54px; height:54px; border-radius:14px; background:rgba(20,22,27,.06); color:var(--brand); display:grid; place-items:center; margin-bottom:16px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a14 14 0 0 1 0 20M12 2a14 14 0 0 0 0 20"/></svg>
+            </div>
+            <h3 class="card__title">Internationalität</h3>
+            <p class="card__excerpt">Lebendige Partnerschaft mit La Ferté-Bernard – Begegnungen, die Brücken bauen.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__body">
+            <div style="width:54px; height:54px; border-radius:14px; background:rgba(20,22,27,.06); color:var(--brand); display:grid; place-items:center; margin-bottom:16px;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
+            </div>
+            <h3 class="card__title">Ehrenamt</h3>
+            <p class="card__excerpt">Ohne unsere Helferinnen und Helfer geht nichts – ihnen gilt unser herzlichster Dank.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vorstand -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Vorstand</span>
+          <h2 class="section__title">Die Köpfe hinter dem Verein</h2>
+          <p class="section__sub">Ein engagiertes Team, das die Geschicke der Sportfreunde leitet.</p>
+        </div>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, #2a2f3a, #14161b); font-size: 3rem;">
+            LL
+            <img src="assets/Lukas.jpeg" alt="Lukas Losch" loading="lazy" onerror="this.remove()" style="object-position: center;">
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>1. Vorsitzender</b></div>
+            <h3 class="card__title">Lukas Losch</h3>
+            <p class="card__excerpt">vorstand@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, var(--brand), var(--brand-dark)); font-size: 3rem;">
+            PL
+            <img src="assets/Patrick.jpeg" alt="Patrick Lopez" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>2. Vorsitzender</b></div>
+            <h3 class="card__title">Patrick Lopez</h3>
+            <p class="card__excerpt">vorstand@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, #e6e8ee, #7c8497); color: #14161b; font-size: 3rem;">
+            KS
+            <img src="assets/Norbert.jpeg" alt="Klaus Schmidt" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Kassenwart</b></div>
+            <h3 class="card__title">Norbert Murrweiss</h3>
+            <p class="card__excerpt">vorstand@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ansprechpartner -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Ansprechpartner</span>
+          <h2 class="section__title">Weitere Vereinsfunktionen</h2>
+          <p class="section__sub">Unsere Abteilungsleiter und Funktionäre rund um den Verein.</p>
+        </div>
+      </div>
+
+      <div class="grid grid--4">
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, #2a2f3a, #14161b); font-size: 3rem;">
+            T
+            <img src="assets/MarkoMayer.jpeg" alt="Tobi" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Abteilungsleiter Aktive</b></div>
+            <h3 class="card__title">Marco Mayer</h3>
+            <p class="card__excerpt">trainer1@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, #e6e8ee, #7c8497); color: #14161b; font-size: 3rem;">
+            M
+            <img src="assets/Tim.jpeg" alt="Markus" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Stellv. Abteilungsleiter Aktive</b></div>
+            <h3 class="card__title">Tim Eberbach-Frei</h3>
+            <p class="card__excerpt">trainer2@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, var(--brand), var(--brand-dark)); font-size: 3rem;">
+            N
+            <img src="assets/rainer.jpeg" alt="Norbert" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Abteilungsleiter AH</b></div>
+            <h3 class="card__title">Rainer Himmelsbach</h3>
+            <p class="card__excerpt">ah@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, #b9bdc7, #2a2f3a); font-size: 3rem;">
+            SE
+            <img src="assets/Stefan.jpeg" alt="Tim" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Stellv. Abteilungsleiter AH</b></div>
+            <h3 class="card__title">Stefan Eisenschmidt</h3>
+            <p class="card__excerpt">ah@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, #2a2f3a, #14161b); font-size: 3rem;">
+            MM
+            <img src="assets/Emi.jpeg" alt="Marko Mayer" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Jugendleitung</b></div>
+            <h3 class="card__title">Emanuel Massa</h3>
+            <p class="card__excerpt">jugendleitung@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, #e6e8ee, #7c8497); color: #14161b; font-size: 3rem;">
+            MB
+            <img src="assets/Klaus.jpeg" alt="Marco Brauch" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Stellv. Jugendleitung</b></div>
+            <h3 class="card__title">Klaus Kappelhoff</h3>
+            <p class="card__excerpt">jugendleitung@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, var(--brand), var(--brand-dark)); font-size: 3rem;">
+            J
+            <img src="assets/Basti.jpeg" alt="Jannik" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Stellv. Jugendleitung</b></div>
+            <h3 class="card__title">Bastian Kieper</h3>
+            <p class="card__excerpt">jugendleitung@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, #b9bdc7, #2a2f3a); font-size: 3rem;">
+            E
+            <img src="assets/Tobi.jpeg" alt="Emi" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta"><b>Sponsoring & Marketing</b></div>
+            <h3 class="card__title">Tobias Pratz</h3>
+            <p class="card__excerpt">presse@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, #2a2f3a, #14161b); font-size: 3rem;">
+            B
+            <img src="assets/Markus.jpeg" alt="Basti" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta">Techn. Leiter<b></b></div>
+            <h3 class="card__title">Markus Schiefer</h3>
+            <p class="card__excerpt">info@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, #2a2f3a, #14161b); font-size: 3rem;">
+            B
+            <img src="assets/Jannik.jpeg" alt="Basti" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta">2.Techn. Leiter<b></b></div>
+            <h3 class="card__title">Jannik Hauber</h3>
+            <p class="card__excerpt">info@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card__media" style="aspect-ratio: 1; background: linear-gradient(135deg, #2a2f3a, #14161b); font-size: 3rem;">
+            B
+            <img src="assets/MarcoBrauch.jpeg" alt="Basti" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <div class="card__meta">Schriftführer<b></b></div>
+            <h3 class="card__title">Marco Brauch</h3>
+            <p class="card__excerpt">info@sportfreunde-lauffen.de</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnerstadt -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="grid grid--2" style="gap: 56px; align-items: center;">
+        <div class="reveal">
+          <span class="eyebrow" style="color: var(--accent);">Internationale Freundschaft</span>
+          <h2 class="section__title">La Ferté-Bernard</h2>
+          <p>
+            Mit Lauffens französischer Partnerstadt La Ferté-Bernard pflegen wir seit vielen Jahren eine enge Sportfreundschaft.
+            Regelmäßige Austauschfahrten, internationale Turniere und persönliche Begegnungen verbinden Generationen von Spielerinnen und Spielern.
+          </p>
+          <p>Die unvergesslichen Erlebnisse, neuen Freundschaften und gemeinsamen Erfahrungen sind ein wichtiger Teil unserer Vereinskultur.</p>
+          <a href="news.html" class="btn btn--primary mt-4">Berichte zum Austausch</a>
+        </div>
+        <div class="reveal" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <div style="width: 180px; height: 240px; background: linear-gradient(90deg, #002654 33%, #ffffff 33% 66%, #ed2939 66%); border-radius: var(--r-lg); display: grid; place-items: center; color: #fff; font-family: var(--font-display); font-size: 1.4rem; text-shadow: 0 2px 8px rgba(0,0,0,.65); transform: rotate(-3deg);">FRANCE</div>
+          <div style="width: 180px; height: 240px; background: linear-gradient(180deg, #000000 33%, #dd0000 33% 66%, #ffce00 66%); border-radius: var(--r-lg); display: grid; place-items: center; color: #fff; font-family: var(--font-display); font-size: 1.4rem; text-shadow: 0 2px 8px rgba(0,0,0,.65); transform: rotate(3deg);">DEUTSCHLAND</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kooperation TSG Hoffenheim Teaser -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="grid grid--2" style="gap: 48px; align-items: center;">
+        <div class="reveal">
+          <span class="eyebrow">Partnerschaft</span>
+          <h2 class="section__title">Kooperation mit der TSG 1899 Hoffenheim</h2>
+          <p>Seit mehreren Jahren arbeiten wir erfolgreich mit der <b>ACHTZEHN99 Akademie</b> der TSG 1899 Hoffenheim zusammen – für eine moderne Ausbildung an der Basis, die Weiterentwicklung unserer Trainer und gemeinsame Jugendferien-Camps in Lauffen.</p>
+          <a href="kooperation.html" class="btn btn--primary mt-4">Mehr zur Kooperation</a>
+        </div>
+        <div class="reveal" style="display:flex; justify-content:center;">
+          <div style="width: 280px; height: 280px; border-radius: 50%; background: #fff; border: 1px solid var(--border); box-shadow: var(--shadow-lg); display: grid; place-items: center; padding: 32px;">
+            <img src="assets/hoffenheim.jpg" alt="TSG 1899 Hoffenheim – ACHTZEHN99 Akademie" style="width: 100%; height: 100%; object-fit: contain; display: block;" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div>
+          <h2>Mach mit – werde Mitglied</h2>
+          <p>Ob aktiv auf dem Platz, im Vorstand, als Helfer:in oder Fan – wir freuen uns auf dich.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="kontakt.html" class="btn btn--light">Jetzt anmelden</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="color: #fff">
+            <span class="brand__logo"><img src="assets/SFLschwarz.jpeg" alt="SFL Wappen"></span>
+            <span class="brand__name" style="color:#fff">Sportfreunde Lauffen<small style="color: var(--text-on-dark-soft)">Tradition seit 1920</small></span>
+          </a>
+          <p style="margin-top: 16px; max-width: 36ch;">Der Fußballverein im Herzen von Lauffen am Neckar. Familiär, leidenschaftlich, ambitioniert.</p>
+          <div class="footer-stats">
+            <div><b>149</b><span>Heute online</span></div>
+            <div><b>4.661</b><span>Diesen Monat</span></div>
+            <div><b>1.24M+</b><span>Total</span></div>
+          </div>
+        </div>
+        <div>
+          <h4>Verein</h4>
+          <ul>
+            <li><a href="verein.html">Über uns</a></li>
+            <li><a href="verein.html">Vorstand</a></li>
+            <li><a href="kooperation.html">Kooperation TSG Hoffenheim</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="sponsoren.html">Sponsoren</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sport</h4>
+          <ul>
+            <li><a href="mannschaften.html">1. Mannschaft</a></li>
+            <li><a href="mannschaften.html">2. Mannschaft</a></li>
+            <li><a href="jugend.html">Jugend</a></li>
+            <li><a href="news.html">Spielberichte</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li>Sportgelände Lauffen</li>
+            <li>74348 Lauffen am Neckar</li>
+            <li><a href="mailto:info@sportfreunde-lauffen.de">info@sportfreunde-lauffen.de</a></li>
+            <li><a href="kontakt.html">Anfahrt &amp; Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2016 – <span data-year>2026</span> Sportfreunde Lauffen e.V.</span>
+        <div class="socials" aria-label="Soziale Medien">
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.5 13.4 6 14.5 6H17V2h-3.2C10.7 2 9 3.7 9 6.5V10H6v4h3v8h4z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4A11.5 11.5 0 0 0 4 20l-1 4 4-1A11.5 11.5 0 1 0 20 4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

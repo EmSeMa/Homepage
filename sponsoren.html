@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.openstreetmap.org; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Sponsoren – Sportfreunde Lauffen</title>
+  <meta name="description" content="Unsere Sponsoren und Partner – Werde auch du Teil der SFL-Familie." />
+  <link rel="icon" type="image/jpeg" href="assets/SFLweiss.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    .package {
+      padding: 40px 32px;
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: var(--r-xl);
+      display: flex; flex-direction: column;
+      transition: transform var(--t-med) var(--ease), box-shadow var(--t-med) var(--ease), border-color var(--t-med) var(--ease);
+      position: relative;
+    }
+    .package:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .package--highlight {
+      border-color: var(--brand);
+      box-shadow: var(--shadow-brand);
+    }
+    .package--highlight::before {
+      content: "Beliebt"; position: absolute;
+      top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--brand); color: #fff;
+      padding: 6px 14px; border-radius: var(--r-pill);
+      font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+    }
+    .package__name { font-family: var(--font-display); font-size: 1.4rem; text-transform: uppercase; letter-spacing: .04em; color: var(--brand); margin-bottom: 4px; }
+    .package__price { font-family: var(--font-display); font-size: 3rem; line-height: 1; color: var(--text); }
+    .package__price small { display: block; font-family: var(--font-sans); font-size: .8rem; font-weight: 600; color: var(--text-muted); letter-spacing: .12em; text-transform: uppercase; }
+    .package ul { margin: 24px 0; flex: 1; }
+    .package ul li { padding: 8px 0; display: flex; gap: 10px; align-items: flex-start; color: var(--text-soft); }
+    .package ul li::before {
+      content: ""; width: 18px; height: 18px; border-radius: 50%;
+      background: rgba(20,22,27,.08); color: var(--brand);
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314161b' stroke-width='3' stroke-linecap='round'><path d='M5 12l5 5L20 7'/></svg>");
+      background-repeat: no-repeat; background-position: center;
+      flex: 0 0 auto; margin-top: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html" class="brand"><span class="brand__logo"><img src="assets/SFLweiss.jpeg" alt="SFL Wappen"></span><span class="brand__name">Sportfreunde Lauffen<small>Tradition seit 1920</small></span></a>
+        <ul class="nav__menu">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="verein.html">Verein</a></li>
+          <li><a href="mannschaften.html">Aktive</a></li>
+          <li><a href="jugend.html">Jugend</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="sponsoren.html">Sponsoren</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="nav__cta"><a href="kontakt.html" class="btn btn--primary">Mitglied werden</a></div>
+        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs"><a href="index.html">Start</a> <span>/</span> <span>Sponsoren</span></nav>
+      <span class="eyebrow" style="color: var(--accent)">Partner &amp; Sponsoren</span>
+      <h1>Gemeinsam stark</h1>
+      <p>Ohne unsere Sponsoren wäre vieles nicht möglich. Wir danken unseren Partnern, die uns auf unserem Weg begleiten – und freuen uns über jeden neuen Unterstützer.</p>
+    </div>
+  </section>
+
+  <!-- Aktuelle Sponsoren -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Unsere Partner</span>
+          <h2 class="section__title">Diese Unternehmen unterstützen uns</h2>
+          <p class="section__sub">Ein herzliches Dankeschön an alle Sponsoren der Sportfreunde Lauffen!</p>
+        </div>
+      </div>
+
+      <!-- Hauptsponsoren -->
+      <div class="sponsors-tier reveal">
+        <h3>Exklusiv-Partner</h3>
+      </div>
+      <div class="sponsors sponsors--main reveal">
+        <div class="sponsor"><img src="assets/Schunk.jpg" alt="Schunk" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/Seybold.jpeg" alt="Losch" loading="lazy"></div>        
+      </div>
+
+      <!-- Premium Sponsoren -->
+      <div class="sponsors-tier reveal">
+        <h3>Premium-Partner</h3>
+      </div>
+      <div class="sponsors reveal">
+        <div class="sponsor"><img src="assets/Losch.png" alt="Losch" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/allianz.png" alt="Allianz" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/MuellerPlanbau.jpg" alt="Müller Planbau" loading="lazy"></div>        
+        <div class="sponsor"><img src="assets/Sunjic.jpeg" alt="Sunjic" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/KTS.jpg" alt="KTS" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/We_are_Teamsport.jpeg" alt="We are Teamsport" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/FKMotorsport.png" alt="FK Motorsport" loading="lazy"></div>
+      </div>
+
+      <!-- Business Sponsoren -->
+      <div class="sponsors-tier reveal">
+        <h3>Business-Partner</h3>
+      </div>
+      <div class="sponsors reveal">
+        <div class="sponsor"><img src="assets/rewe.jpeg" alt="Seybold" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/mocos.jpeg" alt="Sunjic" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/kopf.jpg" alt="KTS" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/Econello.jpeg" alt="We are Teamsport" loading="lazy"></div>
+        <div class="sponsor"><img src="assets/schuler.png" alt="FK Motorsport" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsoring-Pakete -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Sponsoring-Pakete</span>
+          <h2 class="section__title">Wähle dein Engagement</h2>
+          <p class="section__sub">Vom kleinen Werbepartner bis zum Hauptsponsor – wir bieten dir attraktive Sponsoring-Pakete mit großer Reichweite.</p>
+        </div>
+      </div>
+
+      <div class="grid grid--3" style="margin-top: 32px;">
+        <div class="package reveal">
+          <div class="package__name">Bronze</div>
+          <div class="package__price">300 €<small>pro Saison</small></div>
+          <ul>
+            <li>Logo auf der Vereinswebseite</li>
+            <li>Erwähnung im Sponsoren-Banner</li>
+            <li>Einladung zur Sponsoren-Veranstaltung</li>
+            <li>Steuerlich absetzbar</li>
+          </ul>
+          <a href="kontakt.html" class="btn btn--ghost" style="color: var(--brand); border-color: var(--brand)">Anfragen</a>
+        </div>
+
+        <div class="package package--highlight reveal" style="margin-top: 12px;">
+          <div class="package__name">Silber</div>
+          <div class="package__price">750 €<small>pro Saison</small></div>
+          <ul>
+            <li>Alle Bronze-Leistungen</li>
+            <li>Bandenwerbung am Sportplatz</li>
+            <li>Werbung in Stadionheft &amp; Newsletter</li>
+            <li>Logo auf Trainingsanzügen</li>
+            <li>2 VIP-Karten für Heimspiele</li>
+          </ul>
+          <a href="kontakt.html" class="btn btn--primary">Jetzt Sponsor werden</a>
+        </div>
+
+        <div class="package reveal">
+          <div class="package__name">Gold</div>
+          <div class="package__price">1.500 €<small>pro Saison</small></div>
+          <ul>
+            <li>Alle Silber-Leistungen</li>
+            <li>Trikotwerbung (vorne / Brust)</li>
+            <li>Premium-Bandenplatz</li>
+            <li>Co-Branding bei Veranstaltungen</li>
+            <li>5 VIP-Karten + exklusiver Empfang</li>
+            <li>Persönlicher Ansprechpartner</li>
+          </ul>
+          <a href="kontakt.html" class="btn btn--ghost" style="color: var(--brand); border-color: var(--brand)">Anfragen</a>
+        </div>
+      </div>
+
+      <p class="text-center muted reveal" style="margin-top: 24px;">Du hast Interesse an einer individuellen Lösung? <a href="kontakt.html" style="color: var(--brand); font-weight: 700;">Sprich uns an!</a></p>
+    </div>
+  </section>
+
+  <!-- Vorteile -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <div>
+          <span class="eyebrow">Warum sponsern?</span>
+          <h2 class="section__title">Deine Vorteile auf einen Blick</h2>
+        </div>
+      </div>
+
+      <div class="grid grid--4">
+        <div class="card reveal">
+          <div class="card__body">
+            <div style="font-family: var(--font-display); font-size: 2.6rem; color: var(--brand); line-height: 1;">1.24M+</div>
+            <h3 class="card__title" style="margin-top: 8px;">Webseitenbesuche</h3>
+            <p class="card__excerpt">Hohe Sichtbarkeit auf unserer reichweitenstarken Vereinsseite.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__body">
+            <div style="font-family: var(--font-display); font-size: 2.6rem; color: var(--brand); line-height: 1;">250+</div>
+            <h3 class="card__title" style="margin-top: 8px;">Mitglieder</h3>
+            <p class="card__excerpt">Direkter Draht zu einer engagierten Vereinsfamilie und ihren Familien.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__body">
+            <div style="font-family: var(--font-display); font-size: 2.6rem; color: var(--brand); line-height: 1;">105</div>
+            <h3 class="card__title" style="margin-top: 8px;">Jahre Tradition</h3>
+            <p class="card__excerpt">Verankerung in der lokalen Gemeinschaft seit 1920.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card__body">
+            <div style="font-family: var(--font-display); font-size: 2.6rem; color: var(--brand); line-height: 1;">100%</div>
+            <h3 class="card__title" style="margin-top: 8px;">Steuerlich absetzbar</h3>
+            <p class="card__excerpt">Wir stellen dir gerne eine Spendenquittung aus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div>
+          <h2>Lass uns reden</h2>
+          <p>Wir freuen uns auf ein persönliches Gespräch und finden gemeinsam die passende Lösung für dein Unternehmen.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="kontakt.html" class="btn btn--light">Jetzt anfragen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="color: #fff"><span class="brand__logo"><img src="assets/SFLschwarz.jpeg" alt="SFL Wappen"></span><span class="brand__name" style="color:#fff">Sportfreunde Lauffen<small style="color: var(--text-on-dark-soft)">Tradition seit 1920</small></span></a>
+          <p style="margin-top: 16px; max-width: 36ch;">Der Fußballverein im Herzen von Lauffen am Neckar.</p>
+        </div>
+        <div><h4>Verein</h4><ul><li><a href="verein.html">Über uns</a></li><li><a href="verein.html">Vorstand</a></li><li><a href="kooperation.html">Kooperation TSG Hoffenheim</a></li><li><a href="news.html">News</a></li><li><a href="sponsoren.html">Sponsoren</a></li></ul></div>
+        <div><h4>Sport</h4><ul><li><a href="mannschaften.html">1. Mannschaft</a></li><li><a href="mannschaften.html">2. Mannschaft</a></li><li><a href="jugend.html">Jugend</a></li><li><a href="news.html">Spielberichte</a></li></ul></div>
+        <div><h4>Kontakt</h4><ul><li>Sportgelände Lauffen</li><li>74348 Lauffen am Neckar</li><li><a href="mailto:info@sportfreunde-lauffen.de">info@sportfreunde-lauffen.de</a></li><li><a href="kontakt.html">Anfahrt &amp; Impressum</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2016 – <span data-year>2026</span> Sportfreunde Lauffen e.V.</span>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.5 13.4 6 14.5 6H17V2h-3.2C10.7 2 9 3.7 9 6.5V10H6v4h3v8h4z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4A11.5 11.5 0 0 0 4 20l-1 4 4-1A11.5 11.5 0 1 0 20 4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
